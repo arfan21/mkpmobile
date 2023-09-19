@@ -23,7 +23,7 @@
     - Pada Gate Validasi terdapat scheduler atau cron job untuk menyinkronkan data ke server sentral.
     - Gate Validasi akan menghitung tarif berdasarkan data terakhir check-in dan check-out yang tersimpan di kartu pengguna.
 
-Solusi saat tidak ada jaringan internet memungkinkan jika dapat menambahkan state atau varible ke kartu prepaid pengguna.
+Solusi saat tidak ada jaringan internet memungkinkan jika dapat menambahkan state atau variable ke kartu prepaid pengguna.
 
 ## Database Desgn <a name = "db_design"></a>
 
@@ -50,5 +50,25 @@ SECRET_KEY
 ```
 
 ## Usage <a name="usage"></a>
+
+### Run Server
+
+```
+go run main.go serve
+```
+
+### Run Migration
+
+```
+go run main.go migrate up
+```
+
+```
+go run main.go migrate down
+```
+
+```
+go run main.go migrate fresh
+```
 
 API documentation: [here](https://documenter.getpostman.com/view/10131591/2s9YC8wBB5)
